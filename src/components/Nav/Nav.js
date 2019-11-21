@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 import './Nav.scss';
 
 export const Nav = () => (
@@ -8,10 +9,10 @@ export const Nav = () => (
         </div>
         <ul className="navbar-nav">
             <li className="nav-item">
-                <a href="/" className="nav-link">Главная</a>
+                <NavLink exact to="/" className="nav-link">Главная</NavLink>
             </li>
             <li className="nav-item">
-                <a href="/about" className="nav-link">Информация</a>
+                <NavLink to="/about" className="nav-link">Информация</NavLink>
             </li>
         </ul>
     </nav>

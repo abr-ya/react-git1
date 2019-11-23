@@ -32,7 +32,7 @@ export const Search = () => {
             <input
                 type="text"
                 className="form-control"
-                placeholder="Введите ник пользователя"
+                placeholder="Введите ник или его часть для поиска"
                 value={value}
                 onChange={event => setValue(event.target.value)}
                 onKeyPress={onSubmit}

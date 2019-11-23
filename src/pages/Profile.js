@@ -11,7 +11,9 @@ export const Profile = ({match}) => {
     // эффект и список зависимостей, пустой массив - выполнится один раз
     useEffect(() => {
         getUser(urlName);
-        getRepos(urlName);        
+        getRepos(urlName);
+        // чтобы не было варнинга на пустой массив!
+        // eslint-disable-next-line    
     }, []);
 
     if (loading) {
